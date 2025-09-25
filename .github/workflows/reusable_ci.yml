@@ -8,9 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
         image: ghcr.io/dbt-labs/dbt-core:1.9.3
-    permissions:
-      id-token: write
-      contents: read
     steps:
       #checkout the repo
       - uses: actions/checkout@v4
